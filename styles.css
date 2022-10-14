@@ -75,7 +75,7 @@ li:hover {
 }
 
 .sign-up ul li:nth-child(2) {
-    border: 2px solid var(--neutral-1);
+    border: 3px solid var(--neutral-1);
     padding: 0.8em 1em;
     border-radius: 1em;
 }
@@ -89,7 +89,7 @@ section {
 }
 
 h1 {
-    max-width: 430px;
+    max-width: 450px;
     font-size: 4em;
     line-height: 1;
     margin-bottom: 0.5em;
@@ -100,7 +100,7 @@ h1 {
 h1+p {
     max-width: 400px;
     line-height: 1.3;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 button {
@@ -116,7 +116,7 @@ button {
 button:hover {
     background-color: var(--background);
     color: var(--neutral-2);
-    border: 2px solid var(--neutral-1);
+    border: 3px solid var(--neutral-1);
     cursor: pointer;
 }
 
