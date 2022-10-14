@@ -120,11 +120,6 @@ button:hover {
     cursor: pointer;
 }
 
-.client {
-    max-width: 90%;
-    margin: 0 auto 2em;
-}
-
 .client img {
     display: inline;
 }
@@ -174,6 +169,11 @@ button:hover {
     button {
         display: block;
         margin: 1.5em auto 2.5em;
+    }
+
+    .client {
+        max-width: 90%;
+        margin: 0 auto 2em;
     }
 
     .client img {
