@@ -89,7 +89,7 @@ section {
 }
 
 h1 {
-    max-width: 450px;
+    max-width: 480px;
     font-size: 4em;
     line-height: 1;
     margin-bottom: 0.5em;
@@ -116,7 +116,7 @@ button {
 button:hover {
     background-color: var(--background);
     color: var(--neutral-2);
-    border: 4px solid var(--neutral-1);
+    border: 3px solid var(--neutral-1);
     cursor: pointer;
 }
 
