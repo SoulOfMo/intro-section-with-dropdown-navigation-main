@@ -27,31 +27,35 @@
 <body>
   <main>
     <header>
-      <div class="logo">
+      <div class="nav">
         <img src="./images/logo.svg" alt="logo">
-      </div>
 
-      <nav>
         <ul>
-          <li><a href="#features">Features</a></li>
+          <li><a href="#features">Features</a>
+            <ul class="dropdown">
+              <li><img src="./images/icon-todo.svg"> Todo List</li>
+              <li><img src="./images/icon-calendar.svg"> Calender</li>
+              <li><img src="./images/icon-reminders.svg"> Reminders</li>
+              <li><img src="./images/icon-planning.svg"> Planning</li>
+            </ul>
+          </li>
           <li><a href="#company">Company</a></li>
           <li><a href="#careers">Careers</a></li>
           <li><a href="#about">About</a></li>
         </ul>
-      </nav>
 
-      <div class="sign-up">
-        <ul>
-          <li>Login</li>
-          <li>Register</li>
-        </ul>
       </div>
+
+      <ul class="sign-up">
+        <li>Login</li>
+        <li>Register</li>
+      </ul>
 
     </header>
 
     <section>
       <div class="box-1">
-        <h1>Make remote work</h1>
+        <h1>Make <br> remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
@@ -70,7 +74,7 @@
       </div>
     </section>
   </main>
-  
+
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
