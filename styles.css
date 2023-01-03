@@ -37,6 +37,8 @@ select {
     --neutral-1: hsl(0, 0%, 41%);
     --neutral-2: hsl(0, 0%, 8%);
     --font: 'Epilogue', sans-serif;
+    --box-shadow: 0px 0px 32px -13px var(--neutral-2);
+    --transition: all 0.3s linear;
 }
 
 body {
@@ -68,28 +70,54 @@ ul {
     position: relative;
 }
 
-.dropdown {
+.dropdown, .show-dropdown {
     background-color: hsl(0, 0%, 100%);
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 40px;
-    padding: 0;
+    left: -20px;
     align-items: flex-start;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px var(--neutral-2);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.nav .show-dropdown  li:nth-child(1)::after {
+    content: url(./images/icon-arrow-up.svg);
+    margin-left: 5px;
+}
+
+.dropdown1 {
+    display: none;
+    top: 40px;
+    left: 170px;
+    padding: 15px 15px 0;
+}
+
+.show-dropdown {
+    display: flex;
 }
 
 .dropdown li {
-    margin: 0 0 0.3em;
+    margin: 0 0 0.5em;
     font-weight: initial;
     font-size: 0.9em;
 }
 
+.dropdown1 li {
+    margin: 0 0 1em;
+}
+
 .dropdown img {
+    width: 12%;
     display: inline;
     margin: 5px 10px 0 0;
+}
+
+img[alt="reminders"] {
+    width: 9%;
 }
 
 .nav ul li:nth-child(1)::after {
@@ -121,6 +149,7 @@ a {
 
 li:hover {
     cursor: pointer;
+    color: var(--neutral-2);
 }
 
 .sign-up li:nth-child(2) {
@@ -129,9 +158,17 @@ li:hover {
     border-radius: 1em;
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.bars {
+    display: none;
+}
+
 section {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -184,7 +221,11 @@ button:hover {
     max-width: 90%;
 }
 
-.hero-mobile {
+/* .hero-mobile {
+    display: none;
+} */
+
+aside {
     display: none;
 }
 
@@ -203,9 +244,22 @@ button:hover {
         display: none;
     }
 
+    .nav-toggle {
+        display: block;
+    }
+
+    .bars {
+        display: flex;
+        margin: 0;
+        background-color: var(--background);
+        color: var(--neutral-2);
+        padding: 0;
+    }
+
     section {
         max-width: unset;
         grid-template-columns: 1fr;
+        position: relative;
     }
 
     h1 {
@@ -214,8 +268,16 @@ button:hover {
         text-align: center;
     }
 
+    h1 br {
+        content: "";
+    }
+
+    h1 br::after {
+        content: " ";
+    }
+
     h1+p {
-        max-width: 90%;
+        max-width: 95%;
         margin: 0 auto;
         text-align: center;
     }
@@ -241,11 +303,87 @@ button:hover {
         grid-row: 1;
     }
 
-    .hero-desktop {
+    /* .hero-desktop {
         display: none;
     }
 
     .hero-mobile {
         display: block;
+    } */
+
+    aside {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 140px;
+        height: 100%;
+        width: 70%;
+        background-color: var(--background);
+        transform: translate(-1000px);
     }
+
+    .show-aside{
+        transform: translate(0);
+    }
+
+    .cancel{
+        position: relative;
+        top: 0;
+        left: 160px;
+        display: flex;
+        margin: 10px 0 40px;
+        background-color: var(--background);
+        color: var(--neutral-2);
+    }
+
+    aside img {
+        display: inline;
+        margin: 0 0.5em 0 0;
+        width: 15%;
+    }
+
+    aside ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    aside ul li {
+        font-size: 1em;
+        margin: 0 0 2em;
+    }
+
+    aside ul li:nth-child(1) a::after {
+        content: url(./images/icon-arrow-down.svg);
+        margin-left: 20px;
+    }
+
+    aside ul li:nth-child(2) a::after {
+        content: url(./images/icon-arrow-down.svg);
+        margin-left: 20px;
+    }
+
+    .aside-dropdown {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    ul.aside-dropdown{ 
+        padding: 0 0 0 28px;
+        display: none;
+    }
+
+    ul.show-aside-dropdown {
+        display: flex;
+    }
+
+    ul.aside-dropdown li{ 
+        width: 100%;
+    }
+
+    .aside-dropdown li::after {
+        display: none;
+    }
+
 }

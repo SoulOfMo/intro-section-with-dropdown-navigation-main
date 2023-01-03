@@ -10,6 +10,7 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/849e6fb852.js" crossorigin="anonymous"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -31,15 +32,21 @@
         <img src="./images/logo.svg" alt="logo">
 
         <ul>
-          <li><a href="#features">Features</a>
+          <li><a href="#features" class="features">Features</a>
             <ul class="dropdown">
-              <li><img src="./images/icon-todo.svg"> Todo List</li>
-              <li><img src="./images/icon-calendar.svg"> Calender</li>
-              <li><img src="./images/icon-reminders.svg"> Reminders</li>
-              <li><img src="./images/icon-planning.svg"> Planning</li>
+              <li><img src="./images/icon-todo.svg" alt="todo"> Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt="calender"> Calender</li>
+              <li><img src="./images/icon-reminders.svg" alt="reminders"> Reminders</li>
+              <li><img src="./images/icon-planning.svg" alt="planning"> Planning</li>
             </ul>
           </li>
-          <li><a href="#company">Company</a></li>
+          <li><a href="#company" class="company">Company</a>
+            <ul class="dropdown1 dropdown">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
           <li><a href="#careers">Careers</a></li>
           <li><a href="#about">About</a></li>
         </ul>
@@ -50,6 +57,10 @@
         <li>Login</li>
         <li>Register</li>
       </ul>
+
+      <button class="bars">
+        <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+      </button>
 
     </header>
 
@@ -69,10 +80,39 @@
         </div>
       </div>
       <div class="box-2">
-        <img src="./images/image-hero-desktop.png" alt="avater" class="hero-desktop">
-        <img src="./images/image-hero-mobile.png" alt="" class="hero-mobile">
+        <!-- <img src="./images/image-hero-desktop.png" alt="avater" class="hero-desktop">
+        <img src="./images/image-hero-mobile.png" alt="" class="hero-mobile"> -->
+        <picture>
+          <source media="(max-width:425px)" srcset="./images/image-hero-mobile.png" alt="" class="hero-mobile">
+          <img src="./images/image-hero-desktop.png" alt="avater" class="hero-desktop">
+        </picture>
       </div>
     </section>
+
+    <aside class="aside">
+      <button class="cancel">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul>
+        <li><a href="#features"  class="aside-features">Features</a>
+          <ul class="aside-dropdown">
+            <li><img src="./images/icon-todo.svg" alt="todo"> Todo List</li>
+            <li><img src="./images/icon-calendar.svg" alt="calender"> Calender</li>
+            <li><img src="./images/icon-reminders.svg" alt="reminders"> Reminders</li>
+            <li><img src="./images/icon-planning.svg" alt="planning"> Planning</li>
+          </ul>
+        </li>
+        <li><a href="#company" class="aside-company">Company</a>
+          <ul class="aside-dropdown aside-dropdown1">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </aside>
   </main>
 
 
@@ -80,6 +120,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="./main.js"></script>
 </body>
 
 </html>
