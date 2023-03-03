@@ -10,19 +10,6 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/849e6fb852.js" crossorigin="anonymous"></script>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -34,7 +21,7 @@
         <ul>
           <li><a href="#features" class="features">Features</a>
             <ul class="dropdown">
-              <li><img src="./images/icon-todo.svg" alt="todo"> Todo List</li>
+              <li><img src="./images/icon-todo.svg" alt="todo">Todo List</li>
               <li><img src="./images/icon-calendar.svg" alt="calender"> Calender</li>
               <li><img src="./images/icon-reminders.svg" alt="reminders"> Reminders</li>
               <li><img src="./images/icon-planning.svg" alt="planning"> Planning</li>
@@ -59,7 +46,7 @@
       </ul>
 
       <button class="bars">
-        <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+        <img src="./images/icon-menu.svg" alt="menu">
       </button>
 
     </header>
@@ -72,18 +59,17 @@
         </p>
 
         <button>Learn more</button>
+        
         <div class="client">
-          <img src="./images/client-databiz.svg" alt="dtabiz">
-          <img src="./images/client-audiophile.svg" alt="audiophile">
-          <img src="./images/client-meet.svg" alt="meet">
-          <img src="./images/client-maker.svg" alt="maker">
+          <img src="./images/client-databiz.svg" alt="dtabiz-logo">
+          <img src="./images/client-audiophile.svg" alt="audiophile-logo">
+          <img src="./images/client-meet.svg" alt="meet-logo">
+          <img src="./images/client-maker.svg" alt="maker-logo">
         </div>
       </div>
       <div class="box-2">
-        <!-- <img src="./images/image-hero-desktop.png" alt="avater" class="hero-desktop">
-        <img src="./images/image-hero-mobile.png" alt="" class="hero-mobile"> -->
         <picture>
-          <source media="(max-width:425px)" srcset="./images/image-hero-mobile.png" alt="" class="hero-mobile">
+          <source media="(max-width:425px)" srcset="./images/image-hero-mobile.png" alt="avater" class="hero-mobile">
           <img src="./images/image-hero-desktop.png" alt="avater" class="hero-desktop">
         </picture>
       </div>
@@ -91,10 +77,10 @@
 
     <aside class="aside">
       <button class="cancel">
-        <i class="fa-solid fa-xmark"></i>
+        <img src="./images/icon-close-menu.svg" alt="close-button">
       </button>
       <ul>
-        <li><a href="#features"  class="aside-features">Features</a>
+        <li><a href="#features" class="aside-features">Features</a>
           <ul class="aside-dropdown">
             <li><img src="./images/icon-todo.svg" alt="todo"> Todo List</li>
             <li><img src="./images/icon-calendar.svg" alt="calender"> Calender</li>
@@ -116,10 +102,10 @@
   </main>
 
 
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="https://github.com/SoulOfMo/" target="_blank">Morin Sultan</a>.
+  </div>
   <script src="./main.js"></script>
 </body>
 

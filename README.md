@@ -46,18 +46,26 @@ Users should be able to:
 - Javascript
 
 ### What I learned
-I learned how to use javascript toggle function and addevent method.
+- I learned how to use javascript toggle function and addevent method.
+- I learned how to use the picture tag.
+- I learned how to remove br tag using css
 
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
 
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+  <source media="(max-width:425px)" srcset="./images/image-hero-mobile png" alt="avater" class="hero-mobile">
+  <img src="./images/image-hero-desktop.png" alt="avater" class="hero-desktop">
+  </picture>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+h1 br {
+  content: "";
+}
+
+h1 br::after {
+ content: " ";
 }
 ```
 ```js
@@ -74,10 +82,8 @@ This is my first time implementing js in my project, and I still have a lot lear
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Build 15 JavaScript Projects - Vanilla JavaScript Course](https://youtu.be/3PHXvlpOkf4) - This video from freecodecamp helped understand how to add a dropdown meun. I really liked this pattern and will use it going forward.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
