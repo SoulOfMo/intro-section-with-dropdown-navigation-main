@@ -181,7 +181,7 @@ button {
     color: var(--background);
     padding: 0.8em 1.5em;
     border-radius: 0.7em;
-    margin: 2.5em 0 4em;
+    margin: 2.5em 0 5em;
     font-weight: 600;
     border: none;
 }
@@ -197,11 +197,11 @@ button:hover {
     display: inline;
 }
 
-.client img[alt="audiophile"] {
+.client img[alt="audiophile-logo"] {
     margin: 0 1em -0.5em;
 }
 
-.client img[alt="meet"] {
+.client img[alt="meet-logo"] {
     margin: 0 1em 0;
 }
 
