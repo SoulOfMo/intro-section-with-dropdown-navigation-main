@@ -184,6 +184,7 @@ button {
     margin: 2.5em 0 5em;
     font-weight: 600;
     border: none;
+    transition: background-color 1s, color 1s;
 }
 
 button:hover {
@@ -304,6 +305,7 @@ aside {
         width: 70%;
         background-color: var(--background);
         transform: translate(-1000px);
+        transition: transform 1s;
     }
 
     .show-aside {
