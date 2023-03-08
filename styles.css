@@ -216,7 +216,13 @@ aside {
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--neutral-1);
+    margin: 3em 0;
+}
+
+.attribution a {
     color: var(--neutral-2);
+    font-weight: 700;
 }
 
 /* mobile */
@@ -227,7 +233,7 @@ aside {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
 
     header nav,
     ul {
@@ -307,7 +313,7 @@ aside {
     .cancel {
         position: relative;
         top: 0;
-        left: 150px;
+        left: 15rem;
         display: flex;
         margin: 10px 0 5px;
         background-color: var(--background);
@@ -364,4 +370,21 @@ aside {
         display: none;
     }
 
+    aside .sign-up {
+        margin: 2em auto 0;
+        padding: 0;
+        align-content: center;
+
+    }
+
+    aside .sign-up li {
+        margin: 0 auto;
+
+    }
+
+    aside .sign-up li:nth-child(2) {
+        width: 90%;
+        margin-top: 1em;
+        text-align: center;
+    }
 }
