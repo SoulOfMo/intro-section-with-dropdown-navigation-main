@@ -1,14 +1,14 @@
-const features = document.querySelector(".features");
-const dropDown = document.querySelector(".dropdown");
-const company = document.querySelector(".company");
-const dropDown1 = document.querySelector(".dropdown1");
-const aside = document.querySelector(".aside")
-const bars = document.querySelector(".bars")
-const cancel = document.querySelector(".cancel")
-const asideFeatures = document.querySelector(".aside-features")
-const asideCompany = document.querySelector(".aside-company")
-const asideDropdown = document.querySelector(".aside-dropdown")
-const asideDropdown1 = document.querySelector(".aside-dropdown1")
+const features = document.querySelector(".features"),
+    dropDown = document.querySelector(".dropdown"),
+    company = document.querySelector(".company"),
+    dropDown1 = document.querySelector(".dropdown1"),
+    aside = document.querySelector(".aside"),
+    bars = document.querySelector(".bars"),
+    cancel = document.querySelector(".cancel"),
+    asideFeatures = document.querySelector(".aside-features"),
+    asideCompany = document.querySelector(".aside-company"),
+    asideDropdown = document.querySelector(".aside-dropdown"),
+    asideDropdown1 = document.querySelector(".aside-dropdown1")
 
 features.addEventListener("click", function () {
     // console.log(dropDown.classList.contains('dropdown'))
@@ -33,11 +33,11 @@ company.addEventListener("click", function () {
     dropDown1.classList.toggle('show-dropdown')
 })
 
-asideFeatures.addEventListener("click", function(){
+asideFeatures.addEventListener("click", function () {
     asideDropdown.classList.toggle('show-aside-dropdown')
 })
 
-asideCompany.addEventListener("click", function(){
+asideCompany.addEventListener("click", function () {
     asideDropdown1.classList.toggle('show-aside-dropdown')
 })
 
